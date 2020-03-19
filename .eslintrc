@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "@crowdhouse/eslint-config-react",
+  ],
+  "globals": {
+      "xit": true,
+      "test": true
+  }
+}
