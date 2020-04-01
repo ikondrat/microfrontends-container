@@ -1,5 +1,12 @@
 {
   "extends": [
-    "airbnb-typescript"
-  ]
+    "airbnb-typescript",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react"
+  ],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }

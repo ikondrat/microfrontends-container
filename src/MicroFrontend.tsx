@@ -48,8 +48,8 @@ class MicroFrontend extends React.Component<MicroFrontendProps> {
     }
 
     fetch(`${host}/asset-manifest.json`)
-      .then(res => res.json())
-      .then(manifest => {
+      .then((res) => res.json())
+      .then((manifest) => {
         const script = document.createElement('script');
         script.id = scriptId;
         script.crossOrigin = '';
