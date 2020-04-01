@@ -1,6 +1,6 @@
 import React from 'react';
 
-type FrontendName = 'sso' | 'sell' | 'invest';
+type FrontendName = 'intro' | 'products' | 'basket';
 
 type FrontEnd = {
   register: (container: string, history: History) => void;

@@ -5,13 +5,13 @@ import MicroFrontend from './MicroFrontend';
 const { REACT_APP_HOST_INTRO, REACT_APP_HOST_PRODUCTS, REACT_APP_HOST_BASKET } = process.env as Record<string, string>;
 
 const AppIntro = ({ history }: { history: History }) => (
-  <MicroFrontend history={history} host={REACT_APP_HOST_INTRO} name="sso" />
+  <MicroFrontend history={history} host={REACT_APP_HOST_INTRO} name="intro" />
 );
 const AppProducts = ({ history }: { history: History }) => (
-  <MicroFrontend history={history} host={REACT_APP_HOST_PRODUCTS} name="sell" />
+  <MicroFrontend history={history} host={REACT_APP_HOST_PRODUCTS} name="products" />
 );
-const AppBusket = ({ history }: { history: History }) => (
-  <MicroFrontend history={history} host={REACT_APP_HOST_BASKET} name="invest" />
+const AppBasket = ({ history }: { history: History }) => (
+  <MicroFrontend history={history} host={REACT_APP_HOST_BASKET} name="basket" />
 );
 
 const Header = () => (
@@ -38,8 +38,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={AppIntro} />
-          <Route exact path="/sell" component={AppProducts} />
-          <Route exact path="/invest" component={AppBusket} />
+          <Route exact path="/products" component={AppProducts} />
+          <Route exact path="/basket" component={AppBasket} />
         </Switch>
       </>
     </BrowserRouter>
